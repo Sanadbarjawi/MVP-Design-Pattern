@@ -11,10 +11,12 @@ import UIKit
 class MostRecentViewController: UIViewController {
     @IBOutlet weak var item2Btn: UIBarButtonItem!
     
+    fileprivate var musicPresenter: MusicPresenter!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        musicPresenter = MusicPresenter(musicService: MusicService())
+        musicPresenter.attachView(self)
     }
     @IBAction func item2BtnPressed(_ sender: Any) {
         
@@ -25,4 +27,34 @@ class MostRecentViewController: UIViewController {
     }
     
 
+}
+extension MostRecentViewController: MusicView{
+    func startLoading() {
+        print("asdf")
+    }
+    
+    func finishLoading() {
+        print("asdf")
+    }
+    
+    func setPosts(_ music: [MusicModel]) {
+        print("asdf")
+    }
+    
+    func setError(_ error: Error?) {
+        print("asdf")
+
+    }
+    
+    func endRefreshing() {
+        print("asdf")
+
+    }
+    
+    func setEmptyView() {
+        print("asdf")
+
+    }
+    
+    
 }

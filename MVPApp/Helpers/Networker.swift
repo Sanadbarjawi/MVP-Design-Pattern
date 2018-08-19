@@ -98,31 +98,13 @@ protocol Endpoint {
 }
 
 enum URLPath {
-    // authentication
-    case login
-    case signUp
-    //Spaces
-    case space
-    //Posts
-    case posts
-    //Media
-    case media
-    //Interests
-    case interests
-    //User
-    case userInfo
+    case music
 }
 
 extension URLPath: Endpoint {
     var path: String {
         switch self {
-        case .login: return "\(Configuration.serverURL)auth"
-        case .signUp: return "\(Configuration.serverURL)users"
-        case .space: return "\(Configuration.serverURL)spaces"
-        case .posts: return "\(Configuration.serverURL)posts"
-        case .media : return "\(Configuration.serverURL)files?file_name=%@"
-        case .interests : return "\(Configuration.serverURL)interests"
-        case .userInfo : return "\(Configuration.serverURL)users/user_info"
+        case .music: return "\(Configuration.serverURL)music"
         }
     }
 }
