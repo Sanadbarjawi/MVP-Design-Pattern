@@ -20,9 +20,9 @@
 		C93A1E7921296130005D04E8 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A1E7821296130005D04E8 /* DownloadsViewController.swift */; };
 		C93A1E7D212963BF005D04E8 /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93A1E7C212963BF005D04E8 /* Networker.swift */; };
 		C9B086E8212969BE007D6A0B /* UploadFileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B086E7212969BE007D6A0B /* UploadFileModel.swift */; };
-		C9B086EF21296F56007D6A0B /* MusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B086EE21296F56007D6A0B /* MusicPresenter.swift */; };
-		C9B086F121296FC1007D6A0B /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B086F021296FC1007D6A0B /* MusicModel.swift */; };
-		C9B086F3212971C5007D6A0B /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B086F2212971C5007D6A0B /* MusicService.swift */; };
+		C9B086EF21296F56007D6A0B /* DataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B086EE21296F56007D6A0B /* DataPresenter.swift */; };
+		C9B086F121296FC1007D6A0B /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B086F021296FC1007D6A0B /* DataModel.swift */; };
+		C9B086F3212971C5007D6A0B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B086F2212971C5007D6A0B /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +42,9 @@
 		C93A1E7821296130005D04E8 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
 		C93A1E7C212963BF005D04E8 /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
 		C9B086E7212969BE007D6A0B /* UploadFileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFileModel.swift; sourceTree = "<group>"; };
-		C9B086EE21296F56007D6A0B /* MusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenter.swift; sourceTree = "<group>"; };
-		C9B086F021296FC1007D6A0B /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
-		C9B086F2212971C5007D6A0B /* MusicService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		C9B086EE21296F56007D6A0B /* DataPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPresenter.swift; sourceTree = "<group>"; };
+		C9B086F021296FC1007D6A0B /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C9B086F2212971C5007D6A0B /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		F0FEBB0409500DDC55B47167 /* Pods_MVPApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVPApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -167,7 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				C9B086E7212969BE007D6A0B /* UploadFileModel.swift */,
-				C9B086F021296FC1007D6A0B /* MusicModel.swift */,
+				C9B086F021296FC1007D6A0B /* DataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 		C9B086E921296C76007D6A0B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				C9B086F2212971C5007D6A0B /* MusicService.swift */,
+				C9B086F2212971C5007D6A0B /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 		C9B086ED21296D2A007D6A0B /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				C9B086EE21296F56007D6A0B /* MusicPresenter.swift */,
+				C9B086EE21296F56007D6A0B /* DataPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -332,12 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B086E8212969BE007D6A0B /* UploadFileModel.swift in Sources */,
-				C9B086F3212971C5007D6A0B /* MusicService.swift in Sources */,
+				C9B086F3212971C5007D6A0B /* DataService.swift in Sources */,
 				C93A1E7D212963BF005D04E8 /* Networker.swift in Sources */,
-				C9B086EF21296F56007D6A0B /* MusicPresenter.swift in Sources */,
+				C9B086EF21296F56007D6A0B /* DataPresenter.swift in Sources */,
 				C93A1E5B2129590A005D04E8 /* ViewController.swift in Sources */,
 				C93A1E7721295E41005D04E8 /* MostRecentViewController.swift in Sources */,
-				C9B086F121296FC1007D6A0B /* MusicModel.swift in Sources */,
+				C9B086F121296FC1007D6A0B /* DataModel.swift in Sources */,
 				C93A1E7921296130005D04E8 /* DownloadsViewController.swift in Sources */,
 				C93A1E592129590A005D04E8 /* AppDelegate.swift in Sources */,
 			);

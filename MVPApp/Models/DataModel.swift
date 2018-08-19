@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class MusicModel: Decodable {
+class DataModel: Decodable {
     var title : String?
     var artist : String?
     var album : String?

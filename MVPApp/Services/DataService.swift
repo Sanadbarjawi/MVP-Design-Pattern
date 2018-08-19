@@ -7,10 +7,10 @@
 //
 
 import Foundation
-class MusicService {
+class DataService {
     
     var helper = APIHelper()
-    func getMusicData(_ params:[String:Any], success: @escaping ([MusicModel])->Void, failure: @escaping (Error?)->Void){
+    func getData(_ params:[String:Any], success: @escaping ([DataModel])->Void, failure: @escaping (Error?)->Void){
         helper.getRequest(endPoint: URLPath.music, parameters: params, headers:["Authorization": "Bearer"]) { (data, _, error) in
             if error != nil {
                 failure(error)
@@ -18,7 +18,7 @@ class MusicService {
             }
             guard let data = data else { return }
             do {
-                let musicList = try JSONDecoder().decode([MusicModel].self, from: data)
+                let musicList = try JSONDecoder().decode([DataModel].self, from: data)
                 success(musicList)
             } catch {
                 failure(error)
