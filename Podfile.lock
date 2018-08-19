@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Swime (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Swime
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Swime
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Swime: da7f606c7a059f8744bc723aec243af1fb914476
+
+PODFILE CHECKSUM: e1018953c6ff048fc3fc7d7a3ca68060e7c82f6c
+
+COCOAPODS: 1.5.3
