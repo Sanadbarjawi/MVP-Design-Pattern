@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.7.3)
+  - SwiftLint (0.26.0)
   - Swime (3.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - SwiftLint
   - Swime
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - SwiftLint
     - Swime
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   Swime: da7f606c7a059f8744bc723aec243af1fb914476
 
-PODFILE CHECKSUM: e1018953c6ff048fc3fc7d7a3ca68060e7c82f6c
+PODFILE CHECKSUM: 0f128d5f62e918e58c16d2b814731c7a20699cb9
 
 COCOAPODS: 1.5.3

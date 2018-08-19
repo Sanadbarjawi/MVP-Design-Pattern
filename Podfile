@@ -8,4 +8,5 @@ target 'MVPApp' do
   # Pods for MVPApp
 pod 'Alamofire'
   pod 'Swime'
+  pod 'SwiftLint'
 end

@@ -8,8 +8,8 @@
 
 import Foundation
 class DataModel: Decodable {
-    var title : String?
-    var artist : String?
-    var album : String?
+    var title: String?
+    var artist: String?
+    var album: String?
     
 }

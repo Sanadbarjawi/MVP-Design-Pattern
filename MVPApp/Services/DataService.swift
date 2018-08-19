@@ -10,8 +10,8 @@ import Foundation
 class DataService {
     
     var helper = APIHelper()
-    func getData(_ params:[String:Any], success: @escaping ([DataModel])->Void, failure: @escaping (Error?)->Void){
-        helper.getRequest(endPoint: URLPath.music, parameters: params, headers:["Authorization": "Bearer"]) { (data, _, error) in
+    func getData(_ params: [String: Any], success: @escaping ([DataModel]) -> Void, failure: @escaping (Error?) -> Void) {
+        helper.getRequest(endPoint: URLPath.music, parameters: params, headers: ["Authorization": "Bearer"]) { (data, _, error) in
             if error != nil {
                 failure(error)
                 return

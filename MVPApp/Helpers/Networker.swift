@@ -115,10 +115,7 @@ extension Networking {
         }
         
         Alamofire.request(url, method: method, parameters: parameters, headers: headers).validate(statusCode: 200...299)
-            .responseData { resposne in
-                
-                callback(resposne.data, StatusCode(resposne.response), resposne.error)
-        }
+            .responseData { resposne in callback(resposne.data, StatusCode(resposne.response), resposne.error) }
     }
     private func upload(method: HTTPMethod, endPoint: Endpoint, uploadFileList: [UploadFileModel], parameters: Parameters = [:],
                         headers: HTTPHeaders? = nil, callback: @escaping NetworkingCompletionHandler) {
@@ -141,9 +138,7 @@ extension Networking {
         }, to: url, method: method, headers: headers) { result in
             switch result {
             case .success(let upload, _, _):
-                upload.responseData { response in
-                    callback(response.data, StatusCode(response.response), response.error)
-                    }.validate(statusCode: 200...299)
+                upload.responseData { response in callback(response.data, StatusCode(response.response), response.error)}.validate(statusCode: 200...299)
             case .failure(let error):
                 callback(nil, StatusCode.serviceUnavailable, error)
                 

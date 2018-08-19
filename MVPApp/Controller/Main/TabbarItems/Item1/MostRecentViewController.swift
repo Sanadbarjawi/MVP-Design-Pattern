@@ -10,7 +10,6 @@ import UIKit
 
 class MostRecentViewController: UIViewController {
     @IBOutlet weak var item2Btn: UIBarButtonItem!
-    
     fileprivate var dataPresenter: DataPresenter!
 
     override func viewDidLoad() {
@@ -21,14 +20,13 @@ class MostRecentViewController: UIViewController {
     @IBAction func item2BtnPressed(_ sender: Any) {
         
         let item2TabbarStoryboard = UIStoryboard(name: "Item2Tabbar", bundle: nil)
-        let mostRecentVC = item2TabbarStoryboard.instantiateViewController(withIdentifier: "DownloadsViewController") as! DownloadsViewController
-        navigationController?.pushViewController(mostRecentVC, animated: true)
+        let mostRecentVC = item2TabbarStoryboard.instantiateViewController(withIdentifier: "DownloadsViewController") as? DownloadsViewController
+        navigationController?.pushViewController(mostRecentVC!, animated: true)
     
     }
     
-
 }
-extension MostRecentViewController: DataView{
+extension MostRecentViewController: DataView {
     func startLoading() {
         print("asdf")
     }
@@ -43,18 +41,14 @@ extension MostRecentViewController: DataView{
     
     func setError(_ error: Error?) {
         print("asdf")
-
     }
     
     func endRefreshing() {
         print("asdf")
-
     }
     
     func setEmptyView() {
         print("asdf")
-
     }
-    
     
 }

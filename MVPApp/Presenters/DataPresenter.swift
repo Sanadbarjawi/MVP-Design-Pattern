@@ -25,21 +25,21 @@ class DataPresenter {
     init(dataService: DataService) {
         self.dataService = dataService
     }
-    func attachView(_ view:DataView){
+    func attachView(_ view: DataView) {
         dataView = view
     }
     
-    func detachView(){
+    func detachView() {
         dataView = nil
     }
     
-    func getData(_ dataId:Int){
+    func getData(_ dataId: Int) {
         self.dataView?.startLoading()
-        let params = ["dataId":dataId]
+        let params = ["dataId": dataId]
         dataService.getData(params, success: { [weak self] dataList in
             self?.dataView?.finishLoading()
             self?.dataList.append(contentsOf: dataList)
-            if self?.dataList.isEmpty ?? false{
+            if self?.dataList.isEmpty ?? false {
                 self?.dataView?.setEmptyView()
                 return
             }
@@ -50,17 +50,16 @@ class DataPresenter {
         })
     }
 
-    func getDataCount()->Int{
+    func getDataCount() -> Int {
         return self.dataList.count
     }
-    func getData(_ indexPath: IndexPath) -> DataModel{
+    func getData(_ indexPath: IndexPath) -> DataModel {
         return self.dataList[indexPath.row]
     }
-    func clearDataList(){
+    func clearDataList() {
         self.dataList = [DataModel]()
     }
     func dataListIsEmpty() -> Bool {
         return self.dataList.isEmpty
     }
 }
-
