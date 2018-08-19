@@ -132,6 +132,7 @@
 		C93A1E7521295A45005D04E8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C93A1E7A21296397005D04E8 /* TabbarItems */,
 				C93A1E5C2129590A005D04E8 /* Main.storyboard */,
 				C93A1E5A2129590A005D04E8 /* ViewController.swift */,
 			);
@@ -175,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				C93A1E7521295A45005D04E8 /* Main */,
-				C93A1E7A21296397005D04E8 /* TabbarItems */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -490,7 +490,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7HJR6DLGG;
-				INFOPLIST_FILE = MVPApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVPApp/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +509,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A7HJR6DLGG;
-				INFOPLIST_FILE = MVPApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVPApp/Assets/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
